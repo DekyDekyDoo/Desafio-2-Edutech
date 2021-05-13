@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/menu.css">
     <link rel="shortcut icon" href="../media/images/logo.ico" type="image/x-icon">
-    <title> Ops! </title>
+    <title>L'Empire I</title>
 </head>
 <body>
     <style>
-        html{
+        body{
             background-image: url(../media/images/bg.png);
             background-attachment: fixed;
             background-size: cover;
@@ -19,9 +19,7 @@
             overflow: auto;
         }
 
-        #bg{
-            background-image: url(../media/images/bg2.png);
-            background-repeat: no-repeat;
+        .bg{
             background-position: center;
             background-size: cover;
             width: 100%;
@@ -29,45 +27,42 @@
             overflow: auto;
         }
 
+        #bg1{
+            background-image: url(../media/images/LEmpire.jpg);
+        }
+
+        #bg2{
+            background-image: url(../media/images/satellite.jpg);
+        }
+
         .textStyle{
+            margin-top: 10%;
+            padding: 2% 0;
             color: white;
             font-family: 'Roboto Mono', monospace;
-            text-align: center;
-            padding-top: 5%;
-            text-shadow: black 10px 10px;
+            text-shadow: black 2px 2px;
+            background-color: rgba(128, 128, 128, 0.5);
         }
 
         .textStyle h1{
-            font-size: 80px;
+            font-size: 50px;
+            text-align: center;
+            text-transform: uppercase;
         }
 
         .textStyle h2{
-            font-size: 50px;
-            margin: 2% 0;
-        }
-
-        .textStyle button{
-            border: none;
-            color: white;
-            padding: 2% 5%;
-            font-family: 'Ubuntu', sans-serif;
-            font-size: 35px;
-            display: block;
-            margin: auto;
-            margin-top: 30px;
-            background-color: chartreuse;
-        }
-
-        .textStyle button:hover{
             font-size: 40px;
+            text-align: center;
+        }
+
+        .textStyle h3{
+            font-size: 35px;
+            margin: 15px 0;
+            padding-left: 80px;
+            padding-right: 80px;
         }
 
     </style>
-    <script defer> 
-        function back(){
-            history.back()
-        }
-    </script>
         <header>
             <div class="navBar">
                 <ul>
@@ -85,14 +80,26 @@
                 </ul>
             </div> 
         </header>
-        <main> <div id="bg">
-            <div class="textStyle">
-                <h1> Ops... </h1>
-                <h2> This page does not exist or is not ready yet. </p> Wait... </h2>
-                <button type="button" onclick="back()"> Return </button>
+
+        <main> 
+            <div class="bg" id="bg1">
+                <div class="textStyle"> 
+                    <h1> L'Empire I </h1>
+                    <h2> Launch of the L'Empire I satellite. </h2>
+                    <h3> The moonRise company will launch a satellite called L'Empire I to orbit the moon. Over 1 billion dollars spent on searches to come up with the best technology to get all the information about the moon. This is another step towards conquering our natural satellite. </h3>
+                </div>
             </div>
-        </div> 
+
+            <div class="bg" id="bg2">
+                <div class="textStyle">
+                    <h1></h1>
+                    <h3> We are already testing and preparing to launch a new satellite in the second quarter of 2025. </h3>
+                    <h2> Wait for us </h2>
+                    <h2> 2025 </h2> 
+                </div>
+            </div>
         </main>
+
         <footer>
             <h4> &copy; Copyright moonRise Company</h4>
         </footer>
