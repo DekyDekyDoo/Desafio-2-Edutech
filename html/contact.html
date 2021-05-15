@@ -7,10 +7,14 @@
     <link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="shortcut icon" href="../media/images/logo.ico" type="image/x-icon">
-    <title> About Us </title>
+    <title> Contact </title>
 </head>
 <body>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;500&family=Source+Code+Pro:wght@300;500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu&family=Ubuntu+Mono&display=swap');
+   
+
         body{
             background-image: url(../media/images/bg.png);
             background-attachment: fixed;
@@ -32,6 +36,41 @@
             background-image: url(../media/images/bg2.png);
         }
 
+        form{
+            margin: 80px 50px;
+            color: white;
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        form label, form legend{
+            display: block;
+            font-size: 20px;
+            margin: 0 0 10px;
+        }
+
+        .normal-input{
+            display: block;
+            margin: 0 0 20px;
+            padding: 10px 25px;
+            width: 50%;
+        }
+
+        .checkbox{
+            margin: 20px 0;
+        }
+
+        .button{
+            background-color: rgb(255, 255, 255);
+            border: none;
+            color: rgb(0, 0, 0);
+            padding: 15px 50px;
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 25px;
+        }
+        
+        .button:hover{
+            font-size: 30px;
+        }
 
     </style>
     <header>
@@ -52,7 +91,32 @@
         </div> 
     </header>
     <main>
-        <div class="bg" id="bg1"> </div>
+        <div class="bg" id="bg1"> 
+            <form>
+                <label for="FullName"> Full Name </label>
+                <input type="text" id="FullName" class="normal-input" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" class="normal-input" required placeholder="*****@domain.com">
+
+                <label for="telephone">Telephon number</label>
+                <input type="tel" id="telephone" class="normal-input" required placeholder="(***) ***-****">
+                
+                <label for="message">Message</label>
+                <textarea cols="70" rows="10" id="message" class="normal-input" required></textarea>
+
+                <fieldset>
+					<legend>Tell us the contact method you prefer.</legend>
+					<label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> Email</label>
+					
+					<label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"> Telephone</label>
+				</fieldset>
+                
+                <label class="checkbox"><input type="checkbox" checked> Would you like to receive our news by email? </label>
+
+                <input type="submit" value="Send" class="button">
+            </form>
+        </div>
     </main>
     <footer>
         <h4> &copy; Copyright moonRise Company</h4>
